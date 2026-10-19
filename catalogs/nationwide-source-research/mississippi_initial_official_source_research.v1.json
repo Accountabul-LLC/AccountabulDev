@@ -1,0 +1,122 @@
+{
+  "catalogKey": "mississippi_initial_official_source_research",
+  "catalogVersion": 1,
+  "preparedBy": "accountabul-source-contract-review",
+  "preparedAt": "2026-08-20T21:27:35.115Z",
+  "entries": [
+    {
+      "jurisdiction": {
+        "jurisdictionType": "county_equivalent",
+        "name": "DeSoto",
+        "legalName": "DeSoto County",
+        "stateName": "Mississippi",
+        "stateLegalName": "State of Mississippi",
+        "stateCode": "MS",
+        "stateFips": "28",
+        "countyFips": "28033",
+        "timezone": "America/Chicago"
+      },
+      "candidateKey": "ms_desoto_official_tax_sale_reports",
+      "discoveredBy": "accountabul-source-contract-review",
+      "discoveredAt": "2026-08-20T21:27:35.115Z",
+      "assessment": {
+        "assessmentVersion": 1,
+        "disposition": "needs_review",
+        "publisherName": "DeSoto County",
+        "publishingAgency": "Tax Collector",
+        "sourceFamily": "county_tax_sale",
+        "assetClass": "real_property",
+        "landingPageUrl": "https://www.desotocountyms.gov/690/Tax-Sale-Information",
+        "officialSource": true,
+        "accessMode": "public",
+        "retrievalMethodHint": "versioned_official_sale_report_download",
+        "sourceFormatHint": "pdf_text",
+        "recordLaneHint": "auction",
+        "expectedUpdateFrequency": "Daily during the published sale season and weekly otherwise",
+        "termsReviewStatus": "not_started",
+        "structureReviewStatus": "mapped",
+        "identityReviewStatus": "reviewed_match_only",
+        "sampleArtifact": null,
+        "decisionNotes": "Official annual county reports and the 2025 parser contract were reviewed. Qualification remains open until terms are approved and the exact sample is verified in the deployed immutable archive.",
+        "assessedBy": "accountabul-source-contract-review",
+        "assessedAt": "2026-08-20T21:27:35.115Z"
+      }
+    },
+    {
+      "jurisdiction": {
+        "jurisdictionType": "county_equivalent",
+        "name": "DeSoto",
+        "legalName": "DeSoto County",
+        "stateName": "Mississippi",
+        "stateLegalName": "State of Mississippi",
+        "stateCode": "MS",
+        "stateFips": "28",
+        "countyFips": "28033",
+        "timezone": "America/Chicago"
+      },
+      "candidateKey": "ms_desoto_official_preliminary_landroll",
+      "discoveredBy": "accountabul-source-contract-review",
+      "discoveredAt": "2026-08-20T21:27:35.115Z",
+      "assessment": {
+        "assessmentVersion": 1,
+        "disposition": "needs_review",
+        "publisherName": "DeSoto County",
+        "publishingAgency": "Tax Assessor and GIS Department",
+        "sourceFamily": "official_preliminary_assessor_landroll",
+        "assetClass": "real_property",
+        "landingPageUrl": "https://www.desotocountyms.gov/205/GIS-Maps-Data",
+        "officialSource": true,
+        "accessMode": "public_with_terms",
+        "retrievalMethodHint": "stabilized_public_arcgis_annual_landroll_double_read",
+        "sourceFormatHint": "api",
+        "recordLaneHint": "property_record",
+        "expectedUpdateFrequency": "Weekly observation while the official 2026 preliminary land roll remains published",
+        "termsReviewStatus": "not_started",
+        "structureReviewStatus": "mapped",
+        "identityReviewStatus": "reviewed_authoritative",
+        "sampleArtifact": null,
+        "decisionNotes": "The official preliminary land-roll structure and exact-PIN identity boundary were reviewed. Qualification remains open until terms are approved and a complete reviewed sample is verified in the deployed immutable archive.",
+        "assessedBy": "accountabul-source-contract-review",
+        "assessedAt": "2026-08-20T21:27:35.115Z"
+      }
+    },
+    {
+      "jurisdiction": {
+        "jurisdictionType": "state",
+        "name": "Mississippi",
+        "legalName": "State of Mississippi",
+        "stateName": "Mississippi",
+        "stateLegalName": "State of Mississippi",
+        "stateCode": "MS",
+        "stateFips": "28",
+        "countyFips": null,
+        "timezone": "America/Chicago"
+      },
+      "candidateKey": "ms_sos_official_tax_forfeited_inventory",
+      "discoveredBy": "accountabul-source-contract-review",
+      "discoveredAt": "2026-08-20T21:27:35.115Z",
+      "assessment": {
+        "assessmentVersion": 1,
+        "disposition": "needs_review",
+        "publisherName": "Mississippi Secretary of State",
+        "publishingAgency": "Public Lands Division",
+        "sourceFamily": "state_forfeited_inventory",
+        "assetClass": "real_property",
+        "landingPageUrl": "https://www.sos.ms.gov/public-lands/tax-forfeited-lands",
+        "officialSource": true,
+        "accessMode": "authorized_export_required",
+        "retrievalMethodHint": null,
+        "sourceFormatHint": "api",
+        "recordLaneHint": "auction",
+        "expectedUpdateFrequency": "Daily after an authorized agency/export retrieval path is approved",
+        "termsReviewStatus": "not_started",
+        "structureReviewStatus": "mapped",
+        "identityReviewStatus": "reviewed_match_only",
+        "sampleArtifact": null,
+        "decisionNotes": "The official statewide inventory shape was reviewed. Qualification remains open until the agency or an approved export path authorizes a consistent snapshot, terms are approved, and a reviewed sample is verified in the deployed immutable archive; the public map token is not an approved transport.",
+        "assessedBy": "accountabul-source-contract-review",
+        "assessedAt": "2026-08-20T21:27:35.115Z"
+      }
+    }
+  ]
+}

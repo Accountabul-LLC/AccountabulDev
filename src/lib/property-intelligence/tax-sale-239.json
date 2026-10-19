@@ -1,0 +1,908 @@
+[
+  {
+    "landTaxNumber": "239-001",
+    "owner": "GOLIBERTY LLC",
+    "address": "4736 ST LOUIS AV",
+    "amountDue": 2975
+  },
+  {
+    "landTaxNumber": "239-002",
+    "owner": "MDPK LLC",
+    "address": "5253 MAFFITT AV",
+    "amountDue": 2441
+  },
+  {
+    "landTaxNumber": "239-011",
+    "owner": "RIGHT NOW PROPERTY LLC",
+    "address": "4737 KENSINGTON AV",
+    "amountDue": 7691
+  },
+  {
+    "landTaxNumber": "239-012",
+    "owner": "BROWN, ALLEN C",
+    "address": "1234 KRAFT ST",
+    "amountDue": 6454
+  },
+  {
+    "landTaxNumber": "239-020",
+    "owner": "JONES, HERBERT C C/O HERBERT C JONE JR",
+    "address": "5388 CLAXTON AV",
+    "amountDue": 18315
+  },
+  {
+    "landTaxNumber": "239-021",
+    "owner": "WHITE, JESSIE M",
+    "address": "5326 UNION BLVD",
+    "amountDue": 9926
+  },
+  {
+    "landTaxNumber": "239-022",
+    "owner": "SHANKLIN,, LYVONNE & LAWRENCE SR & LA",
+    "address": "5382 GERALDINE AV",
+    "amountDue": 5228
+  },
+  {
+    "landTaxNumber": "239-045",
+    "owner": "YARBER, CAROLYN A",
+    "address": "5540 ROBIN AV",
+    "amountDue": 2347
+  },
+  {
+    "landTaxNumber": "239-048",
+    "owner": "BAKER, ALTHA",
+    "address": "5062 DAVISON AV",
+    "amountDue": 1876
+  },
+  {
+    "landTaxNumber": "239-049",
+    "owner": "DEAVENS, CHUFFON",
+    "address": "5306 QUEENS AV",
+    "amountDue": 6834
+  },
+  {
+    "landTaxNumber": "239-050",
+    "owner": "HALL, CORTLAND K",
+    "address": "5334 QUEENS AV",
+    "amountDue": 7408
+  },
+  {
+    "landTaxNumber": "239-054",
+    "owner": "CRAVINS, YOLANDA THERESA",
+    "address": "5219 CABANNE AV",
+    "amountDue": 993
+  },
+  {
+    "landTaxNumber": "239-059",
+    "owner": "ANDRIA, KATHLEEN & MARK J RAMING JR",
+    "address": "5150 PAGE BLVD",
+    "amountDue": 6381
+  },
+  {
+    "landTaxNumber": "239-062",
+    "owner": "LAVISHH LLC",
+    "address": "5024 PAGE BLVD",
+    "amountDue": 8677
+  },
+  {
+    "landTaxNumber": "239-064",
+    "owner": "HUNTER, JASON P & EBONNE SCOTT",
+    "address": "3910 SULLIVAN AV",
+    "amountDue": 2060
+  },
+  {
+    "landTaxNumber": "239-065",
+    "owner": "OUTLAW, DEMETRIS W",
+    "address": "3923 GREER AV",
+    "amountDue": 1630
+  },
+  {
+    "landTaxNumber": "239-075",
+    "owner": "BOOSE, VESTHER",
+    "address": "2721 CLARA AV",
+    "amountDue": 1767
+  },
+  {
+    "landTaxNumber": "239-077",
+    "owner": "AFRICAN METHODIST EPISCOPAL CHURCH IN",
+    "address": "2850 N GRAND BLVD",
+    "amountDue": 2396
+  },
+  {
+    "landTaxNumber": "239-078",
+    "owner": "FROST, CLARK JR ETAL",
+    "address": "2942 HEBERT ST",
+    "amountDue": 897
+  },
+  {
+    "landTaxNumber": "239-093",
+    "owner": "FIRST FREEWILL BAPTIST CHURCH INC",
+    "address": "5564 LABADIE AV",
+    "amountDue": 740
+  },
+  {
+    "landTaxNumber": "239-095",
+    "owner": "YOUNG, AGA RASHAD & AGA RASHAD JR",
+    "address": "5735 TERRY AV",
+    "amountDue": 2398
+  },
+  {
+    "landTaxNumber": "239-096",
+    "owner": "DAVIS, JAMES E",
+    "address": "5752 ST LOUIS AV",
+    "amountDue": 2526
+  },
+  {
+    "landTaxNumber": "239-102",
+    "owner": "CARTE-PARKER, VIVIAN M",
+    "address": "5340 LABADIE AV",
+    "amountDue": 760
+  },
+  {
+    "landTaxNumber": "239-104",
+    "owner": "CROFT DEVELOPMENT PROPERTIES LLC",
+    "address": "5327 LABADIE AV",
+    "amountDue": 3825
+  },
+  {
+    "landTaxNumber": "239-106",
+    "owner": "T-WILL HVAC MAINTENANCE LLC",
+    "address": "5310 ASHLAND AV",
+    "amountDue": 1864
+  },
+  {
+    "landTaxNumber": "239-110",
+    "owner": "ARK OF SAFETY CENTER INC",
+    "address": "5577 TERRY AV",
+    "amountDue": 23218
+  },
+  {
+    "landTaxNumber": "239-114",
+    "owner": "HK STL LLC",
+    "address": "4927 ST LOUIS AV",
+    "amountDue": 3791
+  },
+  {
+    "landTaxNumber": "239-115",
+    "owner": "SCOTT, DEVON C & GREGORY RANSOM",
+    "address": "5374 N KINGSHIGHWAY BLVD",
+    "amountDue": 2472
+  },
+  {
+    "landTaxNumber": "239-116",
+    "owner": "RANSON, GREGORY & DEVON C SCOTT",
+    "address": "5378 N KINGSHIGHWAY BLVD",
+    "amountDue": 1564
+  },
+  {
+    "landTaxNumber": "239-119",
+    "owner": "CARLSON-JAGGIE, IDA",
+    "address": "4567 RAY AV",
+    "amountDue": 9881
+  },
+  {
+    "landTaxNumber": "239-124",
+    "owner": "CARTER, ANTHONY",
+    "address": "5524 GREER AV",
+    "amountDue": 1567
+  },
+  {
+    "landTaxNumber": "239-129",
+    "owner": "NEAL, DANNY D",
+    "address": "4977 ALCOTT AV",
+    "amountDue": 943
+  },
+  {
+    "landTaxNumber": "239-131",
+    "owner": "GALLOWAY, KEITH",
+    "address": "1467 LAUREL ST",
+    "amountDue": 2012
+  },
+  {
+    "landTaxNumber": "239-134",
+    "owner": "TOWNS, JEFFREY A C/O PLANRIGHT LLC",
+    "address": "4929 GENEVIEVE AV",
+    "amountDue": 3373
+  },
+  {
+    "landTaxNumber": "239-139",
+    "owner": "ST LOUIS REDEVELOPMENT CO LLC",
+    "address": "4407 GRAVOIS AV",
+    "amountDue": 2822
+  },
+  {
+    "landTaxNumber": "239-141",
+    "owner": "STANLEY, WINETTA MAE",
+    "address": "5321 ARLINGTON AV",
+    "amountDue": 760
+  },
+  {
+    "landTaxNumber": "239-144",
+    "owner": "WAGNER, JAMES LEE",
+    "address": "5423 DRESDEN AV",
+    "amountDue": 10299
+  },
+  {
+    "landTaxNumber": "239-146",
+    "owner": "MCINTOSH, RACHEL & FULONZO KENNELL",
+    "address": "6014 SHULTE AV",
+    "amountDue": 4341
+  },
+  {
+    "landTaxNumber": "239-148",
+    "owner": "BUSH, DANIELLE",
+    "address": "6027 EMMA AV",
+    "amountDue": 4997
+  },
+  {
+    "landTaxNumber": "239-149",
+    "owner": "BUSH, DANIELLE",
+    "address": "6038 EMMA AV",
+    "amountDue": 3019
+  },
+  {
+    "landTaxNumber": "239-150",
+    "owner": "BYRD, LATOYA",
+    "address": "6006 EMMA AV",
+    "amountDue": 3077
+  },
+  {
+    "landTaxNumber": "239-151",
+    "owner": "ICON REAL ESTATE INVESTORS",
+    "address": "6000 EMMA AV",
+    "amountDue": 4899
+  },
+  {
+    "landTaxNumber": "239-152",
+    "owner": "YEARS INVESTED LLC C/O KALA SCOTT & TA",
+    "address": "6058 LUCILLE AV",
+    "amountDue": 4469
+  },
+  {
+    "landTaxNumber": "239-153",
+    "owner": "MERRITT, JUANITA",
+    "address": "6061 GARESCHE AV",
+    "amountDue": 780
+  },
+  {
+    "landTaxNumber": "239-154",
+    "owner": "MERRITT, JUANITA",
+    "address": "6065 GARESCHE AV",
+    "amountDue": 3305
+  },
+  {
+    "landTaxNumber": "239-158",
+    "owner": "STALLWORTH, JOHNATHAN",
+    "address": "5908 THEODORE AV",
+    "amountDue": 2943
+  },
+  {
+    "landTaxNumber": "239-159",
+    "owner": "TATE, MICHAEL",
+    "address": "5916 LAURA AV",
+    "amountDue": 1686
+  },
+  {
+    "landTaxNumber": "239-160",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "5815 THEODORE AV",
+    "amountDue": 2043
+  },
+  {
+    "landTaxNumber": "239-161",
+    "owner": "LYNCH, DEANNA",
+    "address": "5923 THEKLA AV",
+    "amountDue": 6694
+  },
+  {
+    "landTaxNumber": "239-163",
+    "owner": "CALLICOTT, TYLER",
+    "address": "5919 SHULTE AV",
+    "amountDue": 3955
+  },
+  {
+    "landTaxNumber": "239-164",
+    "owner": "AMANN, SANDRA JOAN TRS",
+    "address": "6101 GRAVOIS AV",
+    "amountDue": 17264
+  },
+  {
+    "landTaxNumber": "239-168",
+    "owner": "MILES, SANDRA S & BRUCE D SMITH & ANDRE",
+    "address": "5756 WOODLAND AV",
+    "amountDue": 7162
+  },
+  {
+    "landTaxNumber": "239-169",
+    "owner": "MATHIS, ARCHIE L",
+    "address": "5807 AMELIA AV",
+    "amountDue": 1975
+  },
+  {
+    "landTaxNumber": "239-172",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "5845 SALOMA AV",
+    "amountDue": 5980
+  },
+  {
+    "landTaxNumber": "239-174",
+    "owner": "MCCLELLAND, LESLIE T",
+    "address": "5132 ROBIN AV",
+    "amountDue": 801
+  },
+  {
+    "landTaxNumber": "239-175",
+    "owner": "MCCLELLAND, LESLIE T",
+    "address": "5136 ROBIN AV",
+    "amountDue": 740
+  },
+  {
+    "landTaxNumber": "239-176",
+    "owner": "MCCLELLAND, LESLIE T",
+    "address": "5138 ROBIN AV",
+    "amountDue": 1341
+  },
+  {
+    "landTaxNumber": "239-178",
+    "owner": "WATSON, HERBERT H",
+    "address": "5011 PLOVER AV",
+    "amountDue": 1374
+  },
+  {
+    "landTaxNumber": "239-179",
+    "owner": "DF FINANCIAL LLC",
+    "address": "4901 THRUSH AV",
+    "amountDue": 1490
+  },
+  {
+    "landTaxNumber": "239-181",
+    "owner": "GUARDIAN INVESTMENT GROUP LLC",
+    "address": "4933 PLOVER AV",
+    "amountDue": 1804
+  },
+  {
+    "landTaxNumber": "239-187",
+    "owner": "BDS ESTATES LLC",
+    "address": "861 HARLAN AV",
+    "amountDue": 3010
+  },
+  {
+    "landTaxNumber": "239-188",
+    "owner": "SPURLOCK, QUINTON",
+    "address": "8653 N BROADWAY ST",
+    "amountDue": 1435
+  },
+  {
+    "landTaxNumber": "239-189",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "5215 GILMORE AV",
+    "amountDue": 2415
+  },
+  {
+    "landTaxNumber": "239-191",
+    "owner": "BEST, ANTHONY",
+    "address": "5265 GILMORE AV",
+    "amountDue": 2330
+  },
+  {
+    "landTaxNumber": "239-197",
+    "owner": "CROFT DEVELOPMENT PROPERTIES LLC",
+    "address": "1165 HOWELL ST",
+    "amountDue": 2277
+  },
+  {
+    "landTaxNumber": "239-201",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "822 WALL ST",
+    "amountDue": 3115
+  },
+  {
+    "landTaxNumber": "239-202",
+    "owner": "COATS, CARLOS",
+    "address": "8838 N BROADWAY ST",
+    "amountDue": 3427
+  },
+  {
+    "landTaxNumber": "239-206",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "5703 GOODFELLOW BLVD",
+    "amountDue": 2267
+  },
+  {
+    "landTaxNumber": "239-207",
+    "owner": "HASKIY, DAVID",
+    "address": "5624 ACME AV",
+    "amountDue": 5157
+  },
+  {
+    "landTaxNumber": "239-208",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "5632 ACME AV",
+    "amountDue": 2258
+  },
+  {
+    "landTaxNumber": "239-209",
+    "owner": "CUMMINGS, TREDELL SR",
+    "address": "5634 ACME AV",
+    "amountDue": 1820
+  },
+  {
+    "landTaxNumber": "239-210",
+    "owner": "JOHNSON, BRIAN",
+    "address": "5641 GOODFELLOW BLVD",
+    "amountDue": 1993
+  },
+  {
+    "landTaxNumber": "239-211",
+    "owner": "PARKER, GENEVA S",
+    "address": "5617 GOODFELLOW BLVD",
+    "amountDue": 2608
+  },
+  {
+    "landTaxNumber": "239-214",
+    "owner": "ALLEN, DE ANNA NICHELLE",
+    "address": "4000 N KINGSHIGHWAY BLVD",
+    "amountDue": 2463
+  },
+  {
+    "landTaxNumber": "239-216",
+    "owner": "HARRIS, THERRIE",
+    "address": "4912 MARGARETTA AV",
+    "amountDue": 6315
+  },
+  {
+    "landTaxNumber": "239-217",
+    "owner": "DOWNTOWN PLUMBING",
+    "address": "4964 ROSALIE ST",
+    "amountDue": 6615
+  },
+  {
+    "landTaxNumber": "239-219",
+    "owner": "COTTON, DOMINIC",
+    "address": "4915 THEKLA AV",
+    "amountDue": 1324
+  },
+  {
+    "landTaxNumber": "239-220",
+    "owner": "BROWN, GREGORY",
+    "address": "4959 THEKLA AV",
+    "amountDue": 816
+  },
+  {
+    "landTaxNumber": "239-223",
+    "owner": "JACKSON, TE'ONNA F",
+    "address": "6154 LAURA AV",
+    "amountDue": 1240
+  },
+  {
+    "landTaxNumber": "239-227",
+    "owner": "JJCA LLC",
+    "address": "6165 LAURA AV",
+    "amountDue": 2917
+  },
+  {
+    "landTaxNumber": "239-228",
+    "owner": "REIGHBOW RE INVESTMENTS LLC",
+    "address": "4961 ROSALIE ST",
+    "amountDue": 2586
+  },
+  {
+    "landTaxNumber": "239-229",
+    "owner": "REIGNBOW REINVESTMENTS LLC",
+    "address": "4961 ROSALIE ST",
+    "amountDue": 4807
+  },
+  {
+    "landTaxNumber": "239-230",
+    "owner": "NEW WAVE PROPERTIES LLC",
+    "address": "4961 ROSALIE ST",
+    "amountDue": 4465
+  },
+  {
+    "landTaxNumber": "239-231",
+    "owner": "REIGNBOW RE INVESTMENTS LLC",
+    "address": "4961 ROSALIE ST",
+    "amountDue": 1559
+  },
+  {
+    "landTaxNumber": "239-234",
+    "owner": "JENNINGS, SUSIE D",
+    "address": "5537 GENEVIEVE AV",
+    "amountDue": 2010
+  },
+  {
+    "landTaxNumber": "239-239",
+    "owner": "AMPLIFIED DEVELOPMENTS LLC",
+    "address": "5452 GENEVIEVE AV",
+    "amountDue": 3150
+  },
+  {
+    "landTaxNumber": "239-241",
+    "owner": "SNEED, AMERICAN",
+    "address": "5449 GENEVIEVE AV",
+    "amountDue": 719
+  },
+  {
+    "landTaxNumber": "239-243",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "5270 GENEVIEVE AV",
+    "amountDue": 1991
+  },
+  {
+    "landTaxNumber": "239-244",
+    "owner": "PRATT, JOHNNIE",
+    "address": "5215 BEACON AV",
+    "amountDue": 4173
+  },
+  {
+    "landTaxNumber": "239-247",
+    "owner": "TOPSTONE INV STL 3 LLC",
+    "address": "5256 BEACON AV",
+    "amountDue": 3143
+  },
+  {
+    "landTaxNumber": "239-251",
+    "owner": "WILLIS, HAROLD & CLARICE A",
+    "address": "4762 WREN AV",
+    "amountDue": 4601
+  },
+  {
+    "landTaxNumber": "239-253",
+    "owner": "WANDRICK, LARRY",
+    "address": "4755 PLOVER AV",
+    "amountDue": 834
+  },
+  {
+    "landTaxNumber": "239-256",
+    "owner": "WELLS, MICHAEL K",
+    "address": "5863 HIGHLAND AV",
+    "amountDue": 6258
+  },
+  {
+    "landTaxNumber": "239-258",
+    "owner": "SAMPA, ERIK",
+    "address": "5899 HIGHLAND AV",
+    "amountDue": 1895
+  },
+  {
+    "landTaxNumber": "239-260",
+    "owner": "LACY, CECELIA & DARRELL",
+    "address": "5068 EMERSON AV",
+    "amountDue": 5003
+  },
+  {
+    "landTaxNumber": "239-261",
+    "owner": "CARTER, LORENZO & JAMES STANLEY HOLM",
+    "address": "5091 ARLINGTON AV",
+    "amountDue": 5048
+  },
+  {
+    "landTaxNumber": "239-263",
+    "owner": "GARNER, SEDONDRA",
+    "address": "5065 ARLINGTON AV",
+    "amountDue": 3188
+  },
+  {
+    "landTaxNumber": "239-270",
+    "owner": "KEYS, ROBERT JR",
+    "address": "5225 ALCOTT AV",
+    "amountDue": 760
+  },
+  {
+    "landTaxNumber": "239-272",
+    "owner": "ELLIS, FANNIE MAE",
+    "address": "5117 AUBERT AV",
+    "amountDue": 4003
+  },
+  {
+    "landTaxNumber": "239-274",
+    "owner": "GRAHAM, BIEDRE & BENNITA GRAYHAME-MA",
+    "address": "5706 GOODFELLOW BLVD",
+    "amountDue": 2675
+  },
+  {
+    "landTaxNumber": "239-275",
+    "owner": "BSD ESTATES LLC",
+    "address": "5725 FLOY AV",
+    "amountDue": 3520
+  },
+  {
+    "landTaxNumber": "239-279",
+    "owner": "BERNELL ENTERPRISE LLC",
+    "address": "4012 N TAYLOR AV",
+    "amountDue": 1896
+  },
+  {
+    "landTaxNumber": "239-282",
+    "owner": "JOHNSON, KEITH",
+    "address": "8825 LOWELL ST",
+    "amountDue": 3319
+  },
+  {
+    "landTaxNumber": "239-283",
+    "owner": "REALTY CONSTRUCTION LLC",
+    "address": "8811 LOWELL ST",
+    "amountDue": 4140
+  },
+  {
+    "landTaxNumber": "239-288",
+    "owner": "MORRIS, KYLE",
+    "address": "8466 CONCORD PL",
+    "amountDue": 3744
+  },
+  {
+    "landTaxNumber": "239-290",
+    "owner": "SOLID CONTRACTING LLC",
+    "address": "8461 N BROADWAY ST",
+    "amountDue": 7199
+  },
+  {
+    "landTaxNumber": "239-304",
+    "owner": "DF FINANCIAL LLC",
+    "address": "10017 RIVERVIEW DR",
+    "amountDue": 4403
+  },
+  {
+    "landTaxNumber": "239-305",
+    "owner": "MOORE-SMITH, BRITTANY",
+    "address": "5922 FERRIS AV",
+    "amountDue": 4488
+  },
+  {
+    "landTaxNumber": "239-312",
+    "owner": "BSD ESTATES LLC",
+    "address": "4218 DRESSELL AV",
+    "amountDue": 5863
+  },
+  {
+    "landTaxNumber": "239-313",
+    "owner": "GURLLY'S HOLDINGS LLC",
+    "address": "5958 GOODFELLOW BLVD",
+    "amountDue": 3644
+  },
+  {
+    "landTaxNumber": "239-322",
+    "owner": "STEVENS, FRED JR & JESSIE MAE",
+    "address": "5053 N KINGSHIGHWAY BLVD",
+    "amountDue": 816
+  },
+  {
+    "landTaxNumber": "239-330",
+    "owner": "JEFFERSON, ORDELL & MARY C",
+    "address": "5624 SUMMIT PL",
+    "amountDue": 2399
+  },
+  {
+    "landTaxNumber": "239-331",
+    "owner": "DANIEL, ALFRED B",
+    "address": "5649 PARK LA",
+    "amountDue": 4219
+  },
+  {
+    "landTaxNumber": "239-334",
+    "owner": "COLEMAN, LAVERNER JR",
+    "address": "5567 FLOY AV",
+    "amountDue": 6242
+  },
+  {
+    "landTaxNumber": "239-335",
+    "owner": "KING, ARTHURO & REGINALD KING & UYVONN",
+    "address": "6207 EMMA AV",
+    "amountDue": 4488
+  },
+  {
+    "landTaxNumber": "239-336",
+    "owner": "DIXSON, ZANE",
+    "address": "5572 FLOY AV",
+    "amountDue": 4361
+  },
+  {
+    "landTaxNumber": "239-337",
+    "owner": "CUNNINGHAM, MODENA C/O MODENA CUNNI",
+    "address": "5550 ERA AV",
+    "amountDue": 8327
+  },
+  {
+    "landTaxNumber": "239-338",
+    "owner": "HARRIS, THERRIE",
+    "address": "5601 MIMIKA AV",
+    "amountDue": 1953
+  },
+  {
+    "landTaxNumber": "239-345",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "6033 W FLORISSANT AV",
+    "amountDue": 7451
+  },
+  {
+    "landTaxNumber": "239-347",
+    "owner": "RUSH, HENRY R & BONNIE R",
+    "address": "5963 PAMPLIN AV",
+    "amountDue": 1175
+  },
+  {
+    "landTaxNumber": "239-352",
+    "owner": "ALKHATALEEN, MOHAMMAD",
+    "address": "3746 ST LOUIS AV",
+    "amountDue": 8505
+  },
+  {
+    "landTaxNumber": "239-359",
+    "owner": "FRELSA LLC",
+    "address": "4633 GRAVOIS AV",
+    "amountDue": 58389
+  },
+  {
+    "landTaxNumber": "239-367",
+    "owner": "MORRISON, MOSELLA & MENSEY, CLARENCE",
+    "address": "5557 PALM ST",
+    "amountDue": 4536
+  },
+  {
+    "landTaxNumber": "239-369",
+    "owner": "HOWARD, JOE & JOSEPH & HOWARD MAYES",
+    "address": "5560 HEBERT ST",
+    "amountDue": 6181
+  },
+  {
+    "landTaxNumber": "239-372",
+    "owner": "HALL, TAMARA",
+    "address": "5105 ASHLAND AV",
+    "amountDue": 3168
+  },
+  {
+    "landTaxNumber": "239-373",
+    "owner": "PACE DEVELOPMENT LLC",
+    "address": "5145 LEXINGTON AV",
+    "amountDue": 14659
+  },
+  {
+    "landTaxNumber": "239-378",
+    "owner": "ROSS, ARLENE",
+    "address": "6333 FYLER AV",
+    "amountDue": 15524
+  },
+  {
+    "landTaxNumber": "239-382",
+    "owner": "JACKSON, DAVID H TRS",
+    "address": "5884 ST LOUIS AV",
+    "amountDue": 2789
+  },
+  {
+    "landTaxNumber": "239-384",
+    "owner": "BERNARD, DARRYL J",
+    "address": "4868 WOODSTOCK AV",
+    "amountDue": 2138
+  },
+  {
+    "landTaxNumber": "239-386",
+    "owner": "BERNARD, DARRYL",
+    "address": "6324 WOODLAND AV",
+    "amountDue": 1889
+  },
+  {
+    "landTaxNumber": "239-389",
+    "owner": "QUALITY TM CONSTRUCTION LLC",
+    "address": "4428 BIRCHER BLVD",
+    "amountDue": 8136
+  },
+  {
+    "landTaxNumber": "239-390",
+    "owner": "HAYMER, HERLINDA C/O DURANE L JACKSON",
+    "address": "4457 CATHERINE PL",
+    "amountDue": 3221
+  },
+  {
+    "landTaxNumber": "239-393",
+    "owner": "DEVCOH LLC",
+    "address": "6033 MARDEL AV",
+    "amountDue": 21346
+  },
+  {
+    "landTaxNumber": "239-395",
+    "owner": "FLEMING, EILEEN M",
+    "address": "3956 SCHILLER PL",
+    "amountDue": 4227
+  },
+  {
+    "landTaxNumber": "239-397",
+    "owner": "TOPSTONE INV STL 1 LLC",
+    "address": "1806 ETON LA",
+    "amountDue": 3379
+  },
+  {
+    "landTaxNumber": "239-399",
+    "owner": "BISHOP, DOROTHY",
+    "address": "1191 SOUTHWORTH CT",
+    "amountDue": 5030
+  },
+  {
+    "landTaxNumber": "239-408",
+    "owner": "BEHEITER, STEPHEN P & MICHELLE R",
+    "address": "4104 CARONDELET BLVD",
+    "amountDue": 16515
+  },
+  {
+    "landTaxNumber": "239-413",
+    "owner": "BLACKMON, JEANETTE",
+    "address": "5862 ELMBANK AV",
+    "amountDue": 2635
+  },
+  {
+    "landTaxNumber": "239-414",
+    "owner": "WE DID IT LLC C/O PATRICIA HEARN, MGR",
+    "address": "8940 RIVERVIEW DR",
+    "amountDue": 92918
+  },
+  {
+    "landTaxNumber": "239-234-015",
+    "owner": "ANDERSON, RAPHEALE",
+    "address": "1435 NORTH PARK PL",
+    "amountDue": 3649
+  },
+  {
+    "landTaxNumber": "239-234-259",
+    "owner": "HARDEN, ERNEST J JR",
+    "address": "6059 GARESCHE AV",
+    "amountDue": 9228
+  },
+  {
+    "landTaxNumber": "239-234-282",
+    "owner": "MILLER, NANETTE D",
+    "address": "5810 LILLIAN AV",
+    "amountDue": 2146
+  },
+  {
+    "landTaxNumber": "239-234-296",
+    "owner": "MARBUS LLC",
+    "address": "1142 HOWELL ST",
+    "amountDue": 4903
+  },
+  {
+    "landTaxNumber": "239-234-342",
+    "owner": "THREE G HOMES LLC C/O DAKOTA SNEED",
+    "address": "5427 BEACON AV",
+    "amountDue": 3613
+  },
+  {
+    "landTaxNumber": "239-234-410",
+    "owner": "THURSTON, VICTOR",
+    "address": "5430 BATES ST",
+    "amountDue": 19322
+  },
+  {
+    "landTaxNumber": "239-234-438",
+    "owner": "JACKSON, ROYALE N",
+    "address": "4544 QUEENS AV",
+    "amountDue": 4573
+  },
+  {
+    "landTaxNumber": "239-234-465",
+    "owner": "TYALOR, ANTHONY W",
+    "address": "5233 ROBERT AV",
+    "amountDue": 20977
+  },
+  {
+    "landTaxNumber": "239-234-476",
+    "owner": "ALLEN, KIMBERLY",
+    "address": "5242 LEXINGTON AV",
+    "amountDue": 5750
+  },
+  {
+    "landTaxNumber": "239-234-496",
+    "owner": "MATLOCK, KHEMBERLY",
+    "address": "4442 BIRCHER BLVD",
+    "amountDue": 17509
+  },
+  {
+    "landTaxNumber": "239-209-044",
+    "owner": "BRYANT, PEARL",
+    "address": "4961 ROSALIE ST",
+    "amountDue": 6796
+  },
+  {
+    "landTaxNumber": "239-204-225",
+    "owner": "HARRIS, SAM L & BERNICE",
+    "address": "5222 ASHLAND AV",
+    "amountDue": 12675
+  }
+]

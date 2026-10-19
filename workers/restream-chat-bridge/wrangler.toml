@@ -1,0 +1,16 @@
+name = "accountabul-restream-chat-bridge"
+main = "src/index.ts"
+compatibility_date = "2026-08-20"
+
+[[durable_objects.bindings]]
+name = "RESTREAM_ROOMS"
+class_name = "RestreamRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RestreamRoom"]
+
+# Add with `wrangler secret put`; never commit values:
+# OPERATIONS_API_KEY
+# RESTREAM_BRIDGE_API_KEY
+# ACCOUNTABUL_ORIGIN

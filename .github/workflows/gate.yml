@@ -1,0 +1,143 @@
+name: gate
+
+# Makes the hourly gate enforce itself instead of relying on an agent choosing
+# to run it. Every test result in this project's history came from someone
+# running the suite by hand and reporting it in a chat; this replaces that with
+# an artifact anyone can check.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: gate (no dependencies)
+    runs-on: ubuntu-latest
+    steps:
+      # The gate reads `git ls-files` to assert that no secret-bearing path is
+      # tracked, so it needs a real checkout — but only of this commit.
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22" # --experimental-strip-types requires >= 22.6
+
+      # No install step, deliberately. scripts/hourly-gate.mjs imports nothing
+      # but node: builtins, so it runs without touching a registry.
+      - name: Run gate
+        id: gate
+        run: node scripts/hourly-gate.mjs | tee gate.log
+
+      # Surface the warnings even on success — the two unrunnable Stripe test
+      # files, absent-but-flagged reports, and the verification backlog are all
+      # things a reviewer should see without opening the job log.
+      - name: Publish gate report
+        if: always()
+        run: |
+          {
+            echo '## Gate report'
+            echo
+            echo '```'
+            cat gate.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  # Every dependency in package-lock.json resolves from the public npm
+  # registry except @cloudflare/workers-types, which is only used by the
+  # separate workers/restream-chat-bridge tsconfig (npm run typecheck:worker).
+  # It is deliberately NOT in package.json/package-lock.json, so `npm ci` here
+  # never touches Lovable's private registry and needs no token at all.
+  # typecheck, lint, the full test suite (including the two Stripe tests,
+  # which run against a local stub, never the real network), and build all
+  # run unconditionally on every push.
+  full-check:
+    name: full check (typecheck, lint, test, build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Check
+        run: npm run check
+
+  # Whether the worker's separate typecheck can run. Split into its own job
+  # because the `secrets` context is not available in a job-level `if:` —
+  # routing it through a job output is what lets typecheck-worker render as
+  # *skipped* rather than as a green that ran nothing.
+  preflight-worker:
+    name: preflight (worker types)
+    runs-on: ubuntu-latest
+    outputs:
+      has_token: ${{ steps.creds.outputs.has_token }}
+    steps:
+      - name: Check for registry credentials
+        id: creds
+        env:
+          TOKEN: ${{ secrets.LOVABLE_NPM_TOKEN }}
+        run: |
+          if [ -n "$TOKEN" ]; then
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            {
+              echo '## Worker typecheck skipped'
+              echo
+              echo 'No `LOVABLE_NPM_TOKEN` secret is configured, so'
+              echo '`@cloudflare/workers-types` cannot be installed from'
+              echo "Lovable's private registry and"
+              echo '`npm run typecheck:worker` did not run here.'
+              echo
+              echo 'This is the only part of `npm run check` that needs that'
+              echo 'secret — typecheck, lint, test, and build all run above'
+              echo 'without it.'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  # This is the one part of the gate that genuinely needs Lovable's private
+  # registry: @cloudflare/workers-types, installed here (not in the lockfile)
+  # so the main install above never needs the token. Skipped outright rather
+  # than run empty when the secret is absent — GitHub renders a skipped job
+  # distinctly from a passing one, which is the honest signal.
+  typecheck-worker:
+    name: typecheck worker
+    needs: preflight-worker
+    if: needs.preflight-worker.outputs.has_token == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Install worker types
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.LOVABLE_NPM_TOKEN }}
+        run: >
+          npm install --no-save --registry
+          https://europe-west1-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/
+          @cloudflare/workers-types@5.20260825.1
+
+      - name: Typecheck worker
+        run: npm run typecheck:worker

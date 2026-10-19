@@ -1,0 +1,298 @@
+{
+  "catalogKey": "mississippi_county_tax_sale_source_research",
+  "catalogVersion": 1,
+  "preparedBy": "accountabul-source-contract-review",
+  "preparedAt": "2026-08-20T23:30:00.000Z",
+  "entries": [
+    {
+      "jurisdiction": {
+        "jurisdictionType": "county_equivalent",
+        "name": "Rankin",
+        "legalName": "Rankin County",
+        "stateName": "Mississippi",
+        "stateLegalName": "State of Mississippi",
+        "stateCode": "MS",
+        "stateFips": "28",
+        "countyFips": "28121",
+        "timezone": "America/Chicago"
+      },
+      "candidateKey": "ms_rankin_official_delinquent_tax_land_sale",
+      "discoveredBy": "accountabul-source-contract-review",
+      "discoveredAt": "2026-08-20T22:45:00.000Z",
+      "assessment": {
+        "assessmentVersion": 1,
+        "disposition": "needs_review",
+        "publisherName": "Rankin County",
+        "publishingAgency": "Tax Collector",
+        "sourceFamily": "county_tax_sale",
+        "assetClass": "real_property",
+        "landingPageUrl": "https://www.rankincounty.org/egov/documents/1786644245_63219.pdf",
+        "officialSource": true,
+        "accessMode": "public",
+        "retrievalMethodHint": "versioned_official_delinquent_land_sale_pdf_download",
+        "sourceFormatHint": "pdf_text",
+        "recordLaneHint": "auction",
+        "expectedUpdateFrequency": "Annual publication with monitoring during the delinquent-tax sale season",
+        "termsReviewStatus": "not_started",
+        "structureReviewStatus": "sampled",
+        "identityReviewStatus": "reviewed_match_only",
+        "fieldInventory": [
+          {
+            "fieldPath": "/taxYear",
+            "publishedLabel": "Tax Year",
+            "sourceValueTypes": ["number"],
+            "semanticRole": "event_date",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_amounts",
+              "field": "tax_year"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Published tax year applies to the parcel amount due."
+          },
+          {
+            "fieldPath": "/saleDate",
+            "publishedLabel": "Sale date",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "event_date",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_events",
+              "field": "starts_at"
+            },
+            "extensionKey": null,
+            "fieldNotes": "The report publishes one live-auction date for the listed parcels."
+          },
+          {
+            "fieldPath": "/assessedOwnerName",
+            "publishedLabel": "Owner name",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "party",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_parties",
+              "field": "published_name"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Preserve the published owner text without treating it as a verified current owner."
+          },
+          {
+            "fieldPath": "/receiptNumber",
+            "publishedLabel": "Receipt No.",
+            "sourceValueTypes": ["null", "string"],
+            "semanticRole": "source_identity",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_lots",
+              "field": "published_receipt_number"
+            },
+            "extensionKey": null,
+            "fieldNotes": "The label is present even when no receipt value is printed; absence must remain null."
+          },
+          {
+            "fieldPath": "/ppin",
+            "publishedLabel": "PPIN",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "property_identifier",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.property_identifiers",
+              "field": "raw_value"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Store as a separately typed published identifier; do not merge it with the parcel number."
+          },
+          {
+            "fieldPath": "/section",
+            "publishedLabel": "Sec",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "geography",
+            "mappingDecision": "extension_attribute",
+            "destination": null,
+            "extensionKey": "public_land_survey_section",
+            "fieldNotes": "Public Land Survey System section text is county-form detail, not a property-table column."
+          },
+          {
+            "fieldPath": "/township",
+            "publishedLabel": "Twnship",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "geography",
+            "mappingDecision": "extension_attribute",
+            "destination": null,
+            "extensionKey": "public_land_survey_township",
+            "fieldNotes": "Public Land Survey System township text remains an explicit extension."
+          },
+          {
+            "fieldPath": "/range",
+            "publishedLabel": "Rng",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "geography",
+            "mappingDecision": "extension_attribute",
+            "destination": null,
+            "extensionKey": "public_land_survey_range",
+            "fieldNotes": "Public Land Survey System range text remains an explicit extension."
+          },
+          {
+            "fieldPath": "/taxDistrict",
+            "publishedLabel": "TD",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "geography",
+            "mappingDecision": "extension_attribute",
+            "destination": null,
+            "extensionKey": "tax_district_code",
+            "fieldNotes": "Preserve the published county tax-district code without assuming a national code system."
+          },
+          {
+            "fieldPath": "/saleSequence",
+            "publishedLabel": "Sale Sequence",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "source_identity",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_lots",
+              "field": "published_lot_number"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Preserve the printed ordering key independently from parcel identity."
+          },
+          {
+            "fieldPath": "/descriptionLines/*",
+            "publishedLabel": "Legal description",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "legal_description",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_lots",
+              "field": "legal_description"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Retain ordered lines so the published legal description can be reconstructed exactly."
+          },
+          {
+            "fieldPath": "/instrumentHistory/*",
+            "publishedLabel": "Prior instrument references",
+            "sourceValueTypes": ["object"],
+            "semanticRole": "source_metadata",
+            "mappingDecision": "raw_only",
+            "destination": null,
+            "extensionKey": null,
+            "fieldNotes": "Unlabeled historical book, page, and year rows remain raw evidence until their semantics are confirmed."
+          },
+          {
+            "fieldPath": "/deedBook",
+            "publishedLabel": "Deed Book",
+            "sourceValueTypes": ["null", "string"],
+            "semanticRole": "property_attribute",
+            "mappingDecision": "extension_attribute",
+            "destination": null,
+            "extensionKey": "published_deed_book",
+            "fieldNotes": "Published deed reference component; null when the form leaves it blank."
+          },
+          {
+            "fieldPath": "/deedPage",
+            "publishedLabel": "Deed Page",
+            "sourceValueTypes": ["null", "string"],
+            "semanticRole": "property_attribute",
+            "mappingDecision": "extension_attribute",
+            "destination": null,
+            "extensionKey": "published_deed_page",
+            "fieldNotes": "Published deed reference component; null when the form leaves it blank."
+          },
+          {
+            "fieldPath": "/parcelNumber",
+            "publishedLabel": "Parcel#",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "property_identifier",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.property_identifiers",
+              "field": "raw_value"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Keep the full published formatting and normalize only in the identifier resolver."
+          },
+          {
+            "fieldPath": "/acres",
+            "publishedLabel": "Acres",
+            "sourceValueTypes": ["null", "number"],
+            "semanticRole": "property_attribute",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.property_observations",
+              "field": "value_numeric"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Published acreage is an observation and may be absent."
+          },
+          {
+            "fieldPath": "/totalTaxAndCost",
+            "publishedLabel": "TOTAL TAX & COST",
+            "sourceValueTypes": ["number"],
+            "semanticRole": "amount",
+            "mappingDecision": "core_field",
+            "destination": {
+              "relation": "property_core.auction_amounts",
+              "field": "amount"
+            },
+            "extensionKey": null,
+            "fieldNotes": "Rankin publishes one parcel total; component amounts appear only in the report summary and must not be invented per parcel."
+          },
+          {
+            "fieldPath": "/reportSummary/totalRecordsProcessed",
+            "publishedLabel": "Total Records Processed",
+            "sourceValueTypes": ["number"],
+            "semanticRole": "parser_evidence",
+            "mappingDecision": "raw_only",
+            "destination": null,
+            "extensionKey": null,
+            "fieldNotes": "Document-level reconciliation count, not a property fact."
+          },
+          {
+            "fieldPath": "/reportSummary/publishedParcelCount",
+            "publishedLabel": "Parcels Published",
+            "sourceValueTypes": ["number"],
+            "semanticRole": "parser_evidence",
+            "mappingDecision": "raw_only",
+            "destination": null,
+            "extensionKey": null,
+            "fieldNotes": "Use only to reconcile extracted record counts against the source report."
+          },
+          {
+            "fieldPath": "/reportSummary/parcelsNotPublished",
+            "publishedLabel": "Parcels Not Published",
+            "sourceValueTypes": ["number"],
+            "semanticRole": "parser_evidence",
+            "mappingDecision": "raw_only",
+            "destination": null,
+            "extensionKey": null,
+            "fieldNotes": "Document-level exception count; it does not create synthetic property records."
+          },
+          {
+            "fieldPath": "/reportSummary/publishedTotalAmount",
+            "publishedLabel": "Total amount Published for sale",
+            "sourceValueTypes": ["number"],
+            "semanticRole": "parser_evidence",
+            "mappingDecision": "raw_only",
+            "destination": null,
+            "extensionKey": null,
+            "fieldNotes": "Use only to reconcile parcel totals against the source report."
+          },
+          {
+            "fieldPath": "/reportSummary/reportCode",
+            "publishedLabel": "Options for this Report",
+            "sourceValueTypes": ["string"],
+            "semanticRole": "source_metadata",
+            "mappingDecision": "raw_only",
+            "destination": null,
+            "extensionKey": null,
+            "fieldNotes": "Retain as document provenance metadata, not customer-visible property data."
+          }
+        ],
+        "sampleArtifact": null,
+        "decisionNotes": "Reviewed the official 214-page 2025 delinquent-tax land-sale PDF across opening, interior, and final-summary pages. Retrieved bytes were 795708 bytes with SHA-256 51fbd21058d26c045d20147bf63069058f2227bfd9b700d0f1cba641e1890a80. The report states 5103 records processed and 4971 parcels published. This assessment remains sampled and needs_review because terms are not approved, no production parser has proven complete record and amount reconciliation, and the exact file is not yet verified in the deployed immutable archive.",
+        "assessedBy": "accountabul-source-contract-review",
+        "assessedAt": "2026-08-20T23:15:00.000Z"
+      }
+    }
+  ]
+}
